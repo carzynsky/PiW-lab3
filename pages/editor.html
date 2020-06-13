@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics editor</title>
+    <link rel="icon" href="../images/graphicsEditorOver.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/editor.css">
+</head>
+<body>
+    <section id="content">
+        <div class="container">
+            <div class="headerContainer">
+                Graphics editor</div>
+            <div class="row">
+                    <div class="col-md-2">
+                        <label class="myButton" id="rectangle">Rectangle</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="myButton" id="fillRectangle">Filled rectangle</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="myButton" id="circle">Circle</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="myButton" id="fillCircle">Filled circle</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label class=" myButton" id="triangle">Triangle</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="myButton" id="fillTriangle">Filled triangle</label>
+                    </div>
+                </div>
+            <div class="main-panel">
+                <div class="row">
+                    <div class="col-8">
+                        Choose line color and draw!
+                    </div>
+                    <div class="col-1">
+                        <input type="color" id="borderPicker" name="favcolor" value="#31d9f3"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        Choose fill color and draw!
+                    </div>
+                    <div class="col-1">
+                        <input type="color" id="colorPicker" name="favcolor" value="#31d9f3"><br><br>
+                    </div>
+                </div>
+                <canvas width="400" height="200" id="canvas">
+                </canvas>
+                <footer style="font-size: 10px; padding-left: 10px; margin-top: 10px;">Arkadiusz Carzyński</footer>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../scripts/editor.js"></script>
+</html>

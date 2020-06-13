@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body
+{
+    background-color: #000000;
+}
+
+.gamePanel
+{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gameTitle
+{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    color: #97ff17;
+}
+
+#content
+{
+    margin-top: 100px;
+}
+
+input
+{
+    border: none;
+    background-color: black;
+}
+
+input:hover
+{
+    cursor: pointer;
+}
+
+#canvas
+{
+    background-color: black;
+    border: 5px solid #97ff17;
+}
+
+.optionsPanel
+{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    color: #97ff17;
+}
+
+#labelStart
+{
+    color:#ee5454;
+    font-size: 25px;
+}
+
+#labelStart:hover
+{
+    color:#af1b27;
+    cursor: pointer;
+}
+
+#previousDifficulty:hover
+{
+    color:#af1b27;
+    cursor: pointer;
+}
+
+#nextDifficulty:hover
+{
+    color:#af1b27;
+    cursor: pointer;
+}
+
+#previousGameMode:hover
+{
+    color:#af1b27;
+    cursor: pointer;
+}
+
+#nextGameMode:hover
+{
+    color:#af1b27;
+    cursor: pointer;
+}
+
+#userName
+{
+    text-align: center;
+    width: 200px;
+    border: 1px solid #97ff17;
+    color:#ee5454;
+}
+
+.scoreBoard
+{
+    color:#97ff17;
+    margin-top: 20px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="icon" href="../images/iconOver.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/game.css">
+</head>
+<body>
+    <section id="content">
+        <div class="container">
+            <div class="gamePanel">
+                <div class="row gameTitle">
+                    <div class="col-md-6">
+                        <p class="text-sm-center">Snake</p>
+                    </div>
+                    <div class="col-md-6" style="text-align: right;">
+                        <p class="text-sm-right" id="scoreText"></p>
+                    </div>
+                </div>
+                <canvas width="400" height="300" id="canvas"></canvas>
+            </div>
+            <div class="optionsPanel">
+                <div class='row'>
+                    <div class="col-md-12">
+                        <label id="controlsInfo">Control snake with arrows.</label>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-6">
+                        <label>Head / Body</label>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="color" id="headColor" name="favcolor" value="#dfaaff">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="color" id="bodyColor" name="favcolor" value="#bd54ee">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Difficulty</label>
+                    </div>
+                    <div class="col-md-1">
+                        <label id="previousDifficulty"><</label>
+                    </div>
+                    <div class="col-md-4" style="text-align: center;">
+                        <label id="difficulty">Normal</label>
+                    </div>
+                    <div class="col-md-1">
+                        <label id="nextDifficulty">></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Game mode</label>
+                    </div>
+                    <div class="col-md-1">
+                        <label id="previousGameMode"><</label>
+                    </div>
+                    <div class="col-md-4" style="text-align: center;">
+                        <label id="gameMode">Walls</label>
+                    </div>
+                    <div class="col-md-1">
+                        <label id="nextGameMode">></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Your name</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="userName" value="user">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-md-12">
+                        <label id="labelStart">START!</label>
+                    </div>
+                </div>
+                <div class="scoreBoard">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label id="scoreBoardTitle">See best results below:</label>
+                        </div>
+                    </div>
+                    <div id="scores">
+                        <ul id="scoreList">
+
+                        </ul>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../scripts/game.js"></script>
+</html>
